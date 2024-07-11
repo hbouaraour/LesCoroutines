@@ -1,5 +1,9 @@
 package fr.hamtec
 
+import fr.hamtec.creations.gest
+import fr.hamtec.creations.simpleRunBlocking
+
 fun main() {
-    println("Hello World!")
+    println("Coroutine")
+    gest()
 }
