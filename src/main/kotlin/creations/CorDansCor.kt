@@ -28,7 +28,7 @@ fun gest() {
     }
     println("Fin prog")
 }
-fun opDemar(): Unit {
+fun opDemarAsyncr(): Unit {
     runBlocking {
 
         val parentJob = GlobalScope.launch {
@@ -47,6 +47,34 @@ fun opDemar(): Unit {
             }
 
             childJob.await()
+
+        }
+
+        parentJob.join()
+        println("End of parentJob")
+    }
+
+    println("End of program")
+}
+fun opDemarLaunch(){
+    runBlocking {
+
+        val parentJob = GlobalScope.launch {
+            println("Parent coroutine")
+
+            launch {
+                println("First coroutine")
+                delay(1000L)
+                println("End of first coroutine")
+            }
+
+            val childJob = launch(start = CoroutineStart.LAZY) {
+                println("Second coroutine")
+                delay(1500L)
+                println("End of second coroutine")
+            }
+
+            childJob.start()
 
         }
 

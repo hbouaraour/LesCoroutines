@@ -1,9 +1,8 @@
 package fr.hamtec
 
-import fr.hamtec.creations.gest
-import fr.hamtec.creations.opDemar
-import fr.hamtec.creations.simpleRunBlocking
+import fr.hamtec.creations.opDemarAsyncr
+import fr.hamtec.creations.opDemarLaunch
 
 fun main() {
-    opDemar()
+    opDemarLaunch()
 }
