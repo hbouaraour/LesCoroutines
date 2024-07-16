@@ -1,8 +1,11 @@
 package fr.hamtec
 
-import fr.hamtec.creations.opDemarAsyncr
-import fr.hamtec.creations.opDemarLaunch
+import fr.hamtec.creations.sharFlow2
+import fr.hamtec.creations.simple
+import kotlinx.coroutines.launch
+import kotlinx.coroutines.runBlocking
 
 fun main() {
-    opDemarLaunch()
+    sharFlow2()
 }
+
