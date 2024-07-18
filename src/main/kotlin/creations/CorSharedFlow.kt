@@ -54,10 +54,12 @@ fun sharFlow2(){
         }
 
 // Update the state
-        launch {
+        val sharedF = launch {
             repeat(3) { i ->
                 mutableStateFlow.value = i
             }
+
         }
+
     }
 }
