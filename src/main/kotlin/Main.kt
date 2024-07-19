@@ -1,8 +1,8 @@
 package fr.hamtec
 
-import fr.hamtec.constructeurRunBlocking.premTest
+import fr.hamtec.constructeurAsync.fistTestAsync
 
 fun main() {
-    premTest()
+    fistTestAsync()
 }
 
