@@ -1,8 +1,8 @@
 package fr.hamtec
 
-import fr.hamtec.constructeurAsync.fistTestAsync
+import fr.hamtec.attendreLaFinCoroutine.firstAttendre
 
 fun main() {
-    fistTestAsync()
+    firstAttendre()
 }
 
